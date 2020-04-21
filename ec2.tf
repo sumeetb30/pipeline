@@ -1,7 +1,7 @@
 provider "aws" {
-  region = "eu-west-2"
-  access_key = "${var.access_key}"
-  secret_key = "${var.secret_key}"
+  region     = "us-east-1"
+  access_key = "AKIA2XMPBQFUBZ6KZ3X6"
+  secret_key = "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"
 }
 
 data "aws_ami" "ubuntu" {
@@ -17,7 +17,7 @@ data "aws_ami" "ubuntu" {
     values = ["hvm"]
   }
 
-  owners = ["099720109477"]
+  owners = ["737423753576"]
 }
 
 resource "aws_instance" "web" {
